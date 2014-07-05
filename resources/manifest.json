@@ -1,0 +1,16 @@
+{
+  "name": "ClojureScript Chrome Extension",
+  "version": "1.0",
+  "description": "This is a Chrome extension.",
+  "permissions": ["declarativeContent", "<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/application.js"]
+    }
+  ],
+  "web_accessible_resources": [
+
+  ],
+  "manifest_version": 2
+}
